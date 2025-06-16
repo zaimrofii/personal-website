@@ -1,8 +1,70 @@
 @import "tailwindcss";
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  /* --background: #ffffff; */
   --foreground: #171717;
+  --primary: #2d3151;
+  --secondary: #161935;
+  --red: #720028;
+}
+
+/* Tambahkan custom animation dalam @layer supaya tidak dihapus Tailwind */
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-107%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 12s linear infinite;
+  }
+
+  @keyframes title-glow {
+    0% {
+      background-position: 0%;
+    }
+    50% {
+      background-position: 300%;
+    }
+    100% {
+      background-position: 300%;
+    }
+  }
+  @keyframes fade-in-left {
+    0% {
+      opacity: 0.8;
+      transform: translateX(-80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes fade-in-right {
+    0% {
+      opacity: 0.8;
+      transform: translateX(80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .animate-title-glow {
+    animation: title-glow 4s linear infinite;
+    background-size: 200% auto;
+  }
+  .animate-fade-in-left {
+    animation: fade-in-left 0.8s ease-out forwards;
+  }
+  .animate-fade-in-right {
+    animation: fade-in-right 0.8s ease-out forwards;
+  }
 }
 
 @theme inline {
