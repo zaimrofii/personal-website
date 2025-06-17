@@ -17,7 +17,7 @@ const TransitionLink = ({ href, children }) => {
 
     setTimeout(() => {
       router.push(href);
-    }, 200);
+    }, 600);
   };
 
   return (
