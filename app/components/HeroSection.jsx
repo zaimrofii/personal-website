@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const HeroSection = ({ handleMouseMove, handleMouseLeave, btnRefs }) => {
   return (
-    <div className="flex justify-center gap-10 mt-[2vw] flex-wrap">
-      <div className="w-[40%] flex flex-col gap-[3vw] animate-fade-in-left">
+    <div className="flex justify-center gap-10 mt-[2vw] flex-wrap animate-fade-in-top ">
+      <div className="w-[40%] flex flex-col gap-[3vw]">
         <div className="text-[10vw] font-semibold flex flex-col -tracking-[1vw] text-[#720028] text-right mb-[2vw] ">
           <h1 className="h-[8vw]">Za&apos;im</h1>
           <h1 className="h-[8vw] mr-4">Studio</h1>
@@ -26,7 +26,7 @@ const HeroSection = ({ handleMouseMove, handleMouseLeave, btnRefs }) => {
           </a>
         </div>
       </div>
-      <div className="image-wraper flex items-center animate-fade-in-right">
+      <div className="image-wraper flex items-center">
         <Image
           src="/photo-profil.jpg"
           width={400}

@@ -4,7 +4,7 @@ import Image from "next/image";
 const AboutSection = () => {
   return (
     <div
-      className="relative sm:h-[50vw] md:h-[50vw] xl:h-[95vh] bg-[color:var(--primary)] mt-[5vw] overflow-hidden"
+      className="relative sm:h-[50vw] md:h-[50vw] xl:h-[95vh] bg-[color:var(--primary)] mt-[5vw] overflow-hidden animate-fade-in-top"
       style={{ boxShadow: "inset 0px 20px 500px rgba(0,0,0,0.9)" }}
     >
       <div className="relative h-full">

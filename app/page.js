@@ -403,6 +403,7 @@ import PortfolioSection from "./components/PortfolioSection";
 import ServicesSection from "./components/ServicesSection";
 import Footer from "./components/FooterSection";
 import TechStackMarquee from "./components/TechStackSection";
+import PageTransitionIn from "./components/PageTransitionIn";
 
 export default function Home() {
   const [hovered, setHovered] = useState(null);
@@ -554,6 +555,7 @@ export default function Home() {
           <TechStackMarquee />
           <Footer />
         </div>
+        <PageTransitionIn />
         <SideNavbar
           act={act}
           setAct={setAct}

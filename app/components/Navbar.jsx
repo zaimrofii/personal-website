@@ -1,4 +1,5 @@
-import Link from "next/link";
+// import Link from "next/link";
+import TransitionLink from "./TransitionLink";
 
 const Navbar = () => {
   return (
@@ -15,14 +16,16 @@ const Navbar = () => {
             key={item}
             className="pl-3xl list-none lg:text-xl md:text-md font-bold"
           >
-            <Link
+            <TransitionLink
               href={`${
                 item.toLowerCase() === "home" ? "/" : item.toLowerCase()
               }`}
-              className="block text-black hover:text-[#720028] hover:scale-110 transition duration-200"
             >
-              {item.charAt(0).toUpperCase() + item.slice(1)}
-            </Link>
+              {" "}
+              <button className="block text-black hover:text-[#720028] hover:scale-110 transition duration-200">
+                {item.charAt(0).toUpperCase() + item.slice(1)}
+              </button>
+            </TransitionLink>
           </li>
         ))}
       </ul>

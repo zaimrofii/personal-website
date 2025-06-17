@@ -2,13 +2,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import PageTransitionIn from "../components/PageTransitionIn";
 
 const Contact = () => {
   return (
     <>
       {/* Navbar */}
       <div className="flex justify-end px-[10vw] bg-[color:var(--secondary)] h-[5vw] text-white border-b-1 border-gray-800">
-        <ul className="flex gap-8 items-center">
+        <ul className="flex gap-8 items-center ">
           {["Home", "About", "Work", "Contact"].map((item) => (
             <li key={item} className="pl-3xl list-none lg:text-xl md:text-md">
               <Link
@@ -24,8 +25,8 @@ const Contact = () => {
         </ul>
       </div>
 
-      <div className="mt-0 bg-[color:var(--secondary)] text-white">
-        <div className="w-[80vw] mx-auto  pb-20 ">
+      <div className="mt-0 bg-[color:var(--secondary)] text-white ">
+        <div className="w-[80vw] mx-auto  pb-20  animate-fade-in-top">
           <div className="flex pt-[5vw] justify-between ">
             <div className="  w-[65%] ">
               <h1 className="text-[4vw]  py-[6vw] border-b border-gray-400">
@@ -113,6 +114,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <PageTransitionIn />
     </>
   );
 };

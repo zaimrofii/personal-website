@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
+import PageTransitionIn from "../components/PageTransitionIn";
 
 const About = () => {
   useEffect(() => {
@@ -28,6 +29,7 @@ const About = () => {
   }, []);
   return (
     <>
+      <PageTransitionIn />
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -36,8 +38,8 @@ const About = () => {
       >
         <ParallaxProvider>
           <Navbar />
-          <div className="w-[80vw] mx-auto h-auto">
-            <h1 className="text-[4vw] pr-[16vw] py-[6vw] border-b border-gray-400">
+          <div className="w-[80vw] mx-auto h-auto ">
+            <h1 className="text-[4vw] pr-[16vw] py-[6vw] border-b border-gray-400 animate-fade-in-top">
               Helping your vision turn into a smooth and scalable web app.
             </h1>
 
