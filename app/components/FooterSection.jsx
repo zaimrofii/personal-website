@@ -43,7 +43,7 @@ export default function FooterSection() {
 
             {/* Center: Navigation */}
             <div className="h-[7vw] w-[50vw] text-white border-b-1 border-gray-600 flex justify-center gap-5 items-end sm:text-md xl:text-xl">
-              <Link href="home">
+              <Link href="/">
                 <h1 className="cursor-pointer">Home</h1>
               </Link>
               <Link href="work">
