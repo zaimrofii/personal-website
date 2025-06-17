@@ -1,5 +1,5 @@
 // import Link from "next/link";
-import TransitionLink from "./TransitionLink";
+import TransitionLink from "./page-transition-effect/TransitionLink";
 
 const Navbar = () => {
   return (

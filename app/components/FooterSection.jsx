@@ -13,7 +13,7 @@ export default function FooterSection() {
       <div>
         {/* Background Text */}
         <h1
-          className="font-serif text-[16vw] tracking-[-1vw] absolute -top-[6.5vw] left-0 text-gray-100 z-10 "
+          className="font-serif text-[16vw] tracking-[-1vw] absolute -top-[6.6vw] left-0 text-gray-100 z-10 "
           style={{
             textShadow: "-20px 35px 20px rgba(0,0,0,0.6)",
           }}

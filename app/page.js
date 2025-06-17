@@ -403,7 +403,7 @@ import PortfolioSection from "./components/PortfolioSection";
 import ServicesSection from "./components/ServicesSection";
 import Footer from "./components/FooterSection";
 import TechStackMarquee from "./components/TechStackSection";
-import PageTransitionIn from "./components/PageTransitionIn";
+import PageTransitionIn from "./components/page-transition-effect/PageTransitionIn";
 
 export default function Home() {
   const [hovered, setHovered] = useState(null);

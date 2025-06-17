@@ -30,9 +30,9 @@ export default function TechStackMarquee() {
       <h1 className="text-center text-[1.2vw] text-gray-400 italic">
         Tech stack I work with :
       </h1>
-      <div className="relative h-[9vw] py-8 flex items-center dark:bg-neutral-900 bg-gray-200 mb-10">
-        <div className="absolute left-0 top-0 h-full w-40 bg-gradient-to-r from-gray-100 dark:from-neutral-900 via-transparent to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 h-full w-40 bg-gradient-to-l from-gray-100 dark:from-neutral-900 via-transparent to-transparent z-10 pointer-events-none " />
+      <div className="relative h-[9vw] py-8 flex items-center bg-gray-200 mb-10">
+        <div className="absolute left-0 top-0 h-full w-40 bg-gradient-to-r from-gray-100 via-transparent to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 h-full w-40 bg-gradient-to-l from-gray-100 via-transparent to-transparent z-10 pointer-events-none" />
 
         <Marquee
           gradient={false}

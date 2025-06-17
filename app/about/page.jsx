@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
-import PageTransitionIn from "../components/PageTransitionIn";
+import PageTransitionIn from "../components/page-transition-effect/PageTransitionIn";
 
 const About = () => {
   useEffect(() => {
