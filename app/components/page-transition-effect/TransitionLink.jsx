@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import PageTransition from "./PageTransition";
 
@@ -13,7 +13,10 @@ const TransitionLink = ({ href, children }) => {
 
     const current = pathname.replace(/\/$/, "");
     const target = href.replace(/\/$/, "");
-    if (current === target) return; // ⛔ jangan transisi ke halaman yang sama
+
+    if (current === target) {
+      return false; // ✅ hentikan total
+    }
 
     setShowTransition(true);
 
@@ -22,6 +25,10 @@ const TransitionLink = ({ href, children }) => {
     }, 600);
   };
 
+  useEffect(() => {
+    console.log("pathname:", pathname);
+    console.log("href:", href);
+  }, []);
   return (
     <>
       {showTransition && <PageTransition />}

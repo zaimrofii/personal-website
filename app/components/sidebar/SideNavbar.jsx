@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
-import TransitionLink from "./page-transition-effect/TransitionLink";
+import TransitionLink from "../page-transition-effect/TransitionLink";
 
 const SideNavbar = ({
   act,
