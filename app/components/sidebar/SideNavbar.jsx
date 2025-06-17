@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ChevronRight } from "lucide-react";
-import Link from "next/link";
+import TransitionLink from "./page-transition-effect/TransitionLink";
 
 const SideNavbar = ({
   act,
@@ -24,7 +24,7 @@ const SideNavbar = ({
           onClick={() => setAct(!act)}
         />
         <div className="  w-200 h-[60vh] border-y-1 border-[color:var(--primary)] flex flex-col justify-center items-start  text-white text-[3rem]">
-          <Link href="/">
+          <TransitionLink href="/">
             <button
               className={`transform transition duration-1000 opacity-0 ${
                 act ? "translate-x-0 opacity-100" : "translate-x-50 "
@@ -35,8 +35,8 @@ const SideNavbar = ({
             >
               Home
             </button>
-          </Link>
-          <Link href="work">
+          </TransitionLink>
+          <TransitionLink href="work">
             <button
               className={`transform transition duration-1200 opacity-0 ${
                 act ? "translate-x-0 opacity-100" : "translate-x-50 "
@@ -47,8 +47,8 @@ const SideNavbar = ({
             >
               Work
             </button>
-          </Link>
-          <Link href="about">
+          </TransitionLink>
+          <TransitionLink href="about">
             <button
               className={`transform transition duration-1400 opacity-0 ${
                 act ? "translate-x-0 opacity-100" : "translate-x-50 "
@@ -59,8 +59,8 @@ const SideNavbar = ({
             >
               About
             </button>
-          </Link>
-          <Link href="contact">
+          </TransitionLink>
+          <TransitionLink href="contact">
             <button
               className={`transform transition duration-1600 opacity-0 ${
                 act ? "translate-x-0 opacity-100" : "translate-x-50 "
@@ -71,7 +71,7 @@ const SideNavbar = ({
             >
               Contact
             </button>
-          </Link>
+          </TransitionLink>
         </div>
         <h1 className="text-gray-400">NAVIGATION</h1>
       </div>
