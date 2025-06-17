@@ -17,8 +17,8 @@ const Navbar = () => {
             className="pl-3xl list-none lg:text-xl md:text-md font-bold"
           >
             <TransitionLink
-              href={`${
-                item.toLowerCase() === "home" ? "/" : item.toLowerCase()
+              href={`/${
+                item.toLowerCase() === "home" ? "" : item.toLowerCase()
               }`}
             >
               {" "}

@@ -11,7 +11,9 @@ const TransitionLink = ({ href, children }) => {
   const handleClick = (e) => {
     e.preventDefault();
 
-    if (pathname === href || "about") return; // ⛔ jangan transisi ke halaman yang sama
+    const current = pathname.replace(/\/$/, "");
+    const target = href.replace(/\/$/, "");
+    if (current === target) return; // ⛔ jangan transisi ke halaman yang sama
 
     setShowTransition(true);
 
