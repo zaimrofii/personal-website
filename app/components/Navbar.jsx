@@ -11,14 +11,18 @@ const Navbar = () => {
         </p>
       </div>
       <ul className="flex gap-8 items-center">
-        {["Home", "About", "Work", "Contact"].map((item) => (
+        {["Home", "About", "Work", "Service", "Contact"].map((item) => (
           <li
             key={item}
             className="pl-3xl list-none lg:text-xl md:text-md font-bold"
           >
             <TransitionLink
               href={`/${
-                item.toLowerCase() === "home" ? "" : item.toLowerCase()
+                item.toLowerCase() === "home"
+                  ? ""
+                  : item === "Service"
+                  ? "service#pricing-cards"
+                  : item.toLowerCase()
               }`}
             >
               {" "}
