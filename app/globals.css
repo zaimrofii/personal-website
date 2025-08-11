@@ -1,0 +1,98 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+:root {
+  /* --background: #ffffff; */
+  /* --foreground: #171717; */
+  --primary: #2d3151;
+  --secondary: #161935;
+  --red: #720028;
+}
+
+/* Tambahkan custom animation dalam @layer supaya tidak dihapus Tailwind */
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-107%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 12s linear infinite;
+  }
+
+  @keyframes title-glow {
+    0% {
+      background-position: 0%;
+    }
+    50% {
+      background-position: 300%;
+    }
+    100% {
+      background-position: 300%;
+    }
+  }
+  @keyframes fade-in-top {
+    0% {
+      opacity: 0.8;
+      transform: translateY(120px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-top {
+    animation: fade-in-top 0.8s ease-out forwards;
+  }
+  .animate-title-glow {
+    animation: title-glow 4s linear infinite;
+    background-size: 200% auto;
+  }
+  /* page transiton */
+  @keyframes Page-transition-out {
+    0% {
+      transform: scaleY(0);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+  .animate-transition-out {
+    animation: Page-transition-out 0.6s ease-out;
+  }
+  @keyframes Page-transition-in {
+    0% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(0);
+    }
+  }
+  .animate-transition-in {
+    animation: Page-transition-in 0.6s ease-out forwards;
+  }
+  @theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+  }
+
+  /* @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #0a0a0a;
+      --foreground: #ededed;
+    }
+  } */
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
