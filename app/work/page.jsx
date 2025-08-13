@@ -21,7 +21,8 @@ const portfolioItems = [
     tech: ["React", "TailwindCSS", "TypeScript", "rechart"],
     liveDemo: "/work/dashboard",
     github: "#",
-    figma: "#",
+    figma:
+      "https://www.figma.com/design/V74AZ22JNksyjiDmS7rhrd/Dashboard-UI-Kit---Dashboard--Free-Admin-Dashboard--Community-?node-id=0-1&p=f&t=3KINnyZwt9536f4M-0",
     featured: false,
   },
   // {
@@ -46,7 +47,8 @@ const portfolioItems = [
     tech: ["React Native", "TailwindCSS"],
     liveDemo: "/work/mobile1",
     github: "#",
-    figma: "#",
+    figma:
+      "https://www.figma.com/design/ssDwpm7vkzFRtECNTO7SGW/Aspen-Travel-App-Exploration--Mobile-App-Design--Community-?t=iSA1L2GKXEaJc4GH-0",
     featured: false,
   },
 ];
@@ -231,14 +233,14 @@ export default function Work() {
                     >
                       <ExternalLink size={14} /> Live
                     </Link>
-                    <a
+                    {/* <a
                       href={item.github}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-1 text-gray-700 hover:underline text-sm"
                     >
                       <Github size={14} /> Code
-                    </a>
+                    </a> */}
                     {item.figma && (
                       <a
                         href={item.figma}
