@@ -23,7 +23,7 @@ const PortfolioSection = ({ portofolio }) => {
                 width={600}
                 height={600}
                 alt={`Portofolio ${index + 1}`}
-                className="w-[20vw] h-[20vw] object-cover rounded-xl brightness-[115%] saturate-0 transition-all duration-300 hover:saturate-100 hover:shadow-xl"
+                className="w-[20vw] h-[20vw] object-cover rounded-xl  saturate-0 transition-all duration-300 hover:saturate-100 hover:shadow-xl"
               />
             </div>
           ))}

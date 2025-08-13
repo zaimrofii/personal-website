@@ -1,4 +1,12 @@
-const tailwindConfig = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: "class",
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}", // tambahan ini kalau pakai folder app
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       animation: {
@@ -17,8 +25,7 @@ const tailwindConfig = {
       },
     },
   },
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
-  plugins: [],
+  plugins: [
+    // require('@tailwindcss/forms'), // contoh plugin, opsional
+  ],
 };
-
-export default tailwindConfig;

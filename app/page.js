@@ -429,25 +429,25 @@ export default function Home() {
       number: "01",
       title: "Web Development Projects",
       desc: "Proyek pengembangan website dengan desain menarik dan fitur sesuai kebutuhan Anda.",
-      image: "/portofolio1.jpg",
+      image: "/dashboard.jpg",
     },
     {
       number: "02",
       title: "Frontend Showcase",
       desc: "Koleksi antarmuka pengguna modern, responsif, dan mudah digunakan.",
-      image: "/portofolio2.jpg",
+      image: "/mobile1.jpg",
     },
     {
       number: "03",
       title: "Backend Integration",
       desc: "Sistem backend yang kuat untuk mendukung fitur website Anda, termasuk server dan database.",
-      image: "/portofolio3.jpg",
+      image: "/dashboard.jpg",
     },
     {
       number: "04",
       title: "Fullstack Applications",
       desc: "Aplikasi lengkap dengan integrasi frontend dan backend untuk solusi menyeluruh.",
-      image: "/portofolio4.jpg",
+      image: "/mobile1.jpg",
     },
   ];
 

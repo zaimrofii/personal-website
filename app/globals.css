@@ -96,3 +96,15 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 }
+/* Hilangkan scrollbar di seluruh halaman */
+
+/* Untuk Firefox */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE dan Edge */
+}
+
+/* Untuk Chrome, Safari, dan Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
